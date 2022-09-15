@@ -24,3 +24,5 @@ console
 -error = outputs an error message to the console
 
 -table = outputs tabular data
+
+-instantiation = to creat objects of a particular class
