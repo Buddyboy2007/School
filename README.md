@@ -26,3 +26,7 @@ console
 -table = outputs tabular data
 
 -instantiation = to creat objects of a particular class
+
+-prompt = pulls up messages and extra 
+
+-alert = pulls up a message
