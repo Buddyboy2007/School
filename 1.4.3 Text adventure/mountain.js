@@ -12,15 +12,29 @@ let mountain2 = new Scene({
     text: "You find several eggs and a stone...? Goku Is this even i-",
     characterDelay : 25,
     image:"Images/mountain.png",
-    options: [new GameOption("Look at the Stone", () => ng.setScene(mountain3))]
+    options: [
+        new GameOption("Look at the Stone", () => ng.setScene(mountain_stone)),
+        new GameOption("Examine Egg", () => ng.setScene(mountainEgg)),
+    ]
+        
 });
-let mountain3 = new Scene({
+let mountain_stone = new Scene({
     //ng.setStyles("darkred", "Helvetica");
     text: "Its the 6-Star Ball! Though a bird is flying at you and looks angry...",
     image:"Images/mountain.png",
-    options: [new GameOption("Fly off to Bulmas house and relax", () => ng.setScene(mountain4))]
+    options: [new GameOption("Fly off", () => 
+    {
+        ball3 = true;
+        ng.setScene(getChoices());
+    })]
 });
-let mountain4 = new Scene({
-    text: "You found the dragon balls! Great Job!",
-    image: "Images/DBS.png",
-})
+let mountainEgg = new Scene({
+    //ng.setStyles("darkred", "Helvetica");
+    text: "I-I Think the Mama Bird is pretty mad at y-you Goku!",
+    image:"Images/mountain.png",
+    options: [new GameOption("Fly away in fear", () => 
+    {
+        ball3 = false;
+        ng.setScene(getChoices());
+    })]
+});

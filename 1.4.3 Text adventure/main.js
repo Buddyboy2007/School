@@ -4,6 +4,10 @@ Enter your name and the name of any collaborators into the string assigned to th
 */
 let gameName = "Dragon Ball Talerated";
 let creator = "Lance Richmond";
+//player inventory
+let ball1 = false;
+let ball2 = false;
+let ball3 = false;
 
 let gameNameContainer = document.getElementById("gameNameContainer")
 gameNameContainer.textContent += gameName;
@@ -25,15 +29,28 @@ let ng = new TextGameEngine();
 Add to the game by creating new Scenes. 
 */
 
-let choices = new Scene({
-    //ng.setStyles("darkred", "Helvetica");
-    text: "Heya there Goku! I've been trying to find the Dragon balls first before Emperor Pilaf does. Where do you want to go?",
-    //ng.characterDelay = 25;
-    image:"Images/dbz mpa.png",
-    options: [new GameOption("Cave", () => ng.setScene(cave)),
-    new GameOption("Lake", () => ng.setScene(lake)),
-    new GameOption("Mountain", () => ng.setScene(mountain))]
-});
+let getChoices = function(){ 
+    if(ball1 && ball2 && ball3){
+        return ending;
+    }
+    else{
+        var scene = new Scene({
+            //ng.setStyles("darkred", "Helvetica");
+            text: "Heya there Goku! I've been trying to find the Dragon balls first before Emperor Pilaf does. Where do you want to go?",
+            //ng.characterDelay = 25;
+            image:"Images/dbz mpa.png"});
+            if(!ball1) scene.options.push(new GameOption("Cave", () => ng.setScene(cave)));
+            if(!ball2) scene.options.push(new GameOption("Lake", () => ng.setScene(lake)));
+            if(!ball3) scene.options.push(new GameOption("Mountain", () => ng.setScene(mountain)));
+            return scene;
+    }    
+}
+
+let ending = new Scene({
+    text: "You found the dragon balls! Great Job!",
+    image: "Images/DBS.png",
+})
+
 
 let Start = function() {
   
@@ -42,8 +59,7 @@ let Start = function() {
     ng.characterDelay = 25;
     ng.setImage("Images/start.png");
     ng.setOptions([
-        new GameOption("Lets Go!!!", () => ng.setScene(choices)),
-    
+        new GameOption("Lets Go!!!", () => ng.setScene(getChoices()))
 ]);
 }
 

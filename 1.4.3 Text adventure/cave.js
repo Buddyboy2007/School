@@ -15,7 +15,10 @@ let cave_explosion = new Scene({
     text: "You exploded the room... ...=_-? Why did you do that... Well either way you found the 4-Star Ball",
     characterDelay: 25,
     image:"Images/cave-invert.png",
-    options: [new GameOption("Pick up 4-Star Ball", () => ng.setScene(lake))]
+    options: [new GameOption("Pick up 4-Star Ball", () =>{
+        ball1 = true;
+        ng.setScene(getChoices());
+    }) ]
 });
 
 let cave_lit = new Scene({
@@ -23,5 +26,8 @@ let cave_lit = new Scene({
     text: "You see the 4-Star Dragon ball!",
     characterDelay: 25,
     image:"Images/cave.png",
-    options: [new GameOption("Pick up 4-Star Ball and Red Mushroom", () => ng.setScene(lake))]
+    options: [new GameOption("Pick up 4-Star Ball and Red Mushroom",() =>{
+        ball1 = true;
+        ng.setScene(getChoices());
+    })]
 });
