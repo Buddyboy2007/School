@@ -14,13 +14,13 @@ let lake2 = new Scene({
     //ng.setStyles("darkred", "Helvetica");
     text: "Hey Goku look! The 3-Star Ball!",
     characterDelay : 25,
-    image:"Images/cave-invert.png",
+    image:"Images/lake.png",
     options: [new GameOption("Fly to Mountain", () => ng.setScene(mountain))]
 });
 let lake3 = new Scene({
     //ng.setStyles("darkred", "Helvetica");
     text: "YIKES GOKU! Jeez! You almost killed me QmQ....",
     characterDelay: 25,
-    image:"Images/cave.png",
+    image:"Images/lake.png",
     options: [new GameOption("START", () => ng.setScene(choices))]
 });

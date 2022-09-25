@@ -46,13 +46,7 @@ let Start = function() {
     
 ]);
 }
-let cave2 = new Scene({
-    //ng.setStyles("darkred", "Helvetica");
-    text: "You have collected the 4-Star-Ball! Good job Goku!",
-    //ng.characterDelay = 25;
-    image:"Images/dbz mpa.png",
-    options: [new GameOption("Fly To Lake", () => ng.setScene(lake))]
-});
+
 
 /* ----------
 DO NOT REMOVE OR EDIT ANY CODE BELOW THIS COMMENT! The game is ran by calling the Start function. 

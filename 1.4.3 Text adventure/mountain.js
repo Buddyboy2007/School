@@ -16,7 +16,7 @@ let mountain2 = new Scene({
 });
 let mountain3 = new Scene({
     //ng.setStyles("darkred", "Helvetica");
-    text: "Its the 6-Star Ball!",
+    text: "Its the 6-Star Ball! Though a bird is flying at you and looks angry...",
     image:"Images/mountain.png",
     options: [new GameOption("Fly off to Bulmas house and relax", () => ng.setScene(mountain4))]
 });
