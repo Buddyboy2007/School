@@ -15,7 +15,7 @@ let lake2 = new Scene({
     text: "Hey Goku look! The 3-Star Ball!",
     characterDelay : 25,
     image:"Images/lake.png",
-    options: [new GameOption("Fly to Mountain", () =>{
+    options: [new GameOption("Fly away", () =>{
         ball2 = true;
         ng.setScene(getChoices());
     })]
@@ -25,5 +25,5 @@ let lake3 = new Scene({
     text: "YIKES GOKU! Jeez! You almost killed me QmQ....",
     characterDelay: 25,
     image:"Images/lake.png",
-    options: [new GameOption("START", () => ng.setScene(getChoices()))]
+    options: [new GameOption("Fly away", () => ng.setScene(getChoices()))]
 });
