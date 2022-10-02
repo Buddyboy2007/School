@@ -30,3 +30,7 @@ console
 -prompt = pulls up messages and extra 
 
 -alert = pulls up a message
+
+-variable = Variable means anything that can vary. In JavaScript, a variable stores the data value that can be changed later on.
+
+-let = allows anything
