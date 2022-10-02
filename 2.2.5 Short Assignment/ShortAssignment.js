@@ -12,7 +12,25 @@ Then create a conditional statement that tests for a minimum of 2 different clas
 Based on the character's class use alert methods to define unique weapons for the player. 
 Finally, create an else statement to define a default weapon for the player. 
 */
-let playerclass = prompt("What class do you want to pick. Warrior, Mage, Thief.")
+let playerclass = prompt("What class do you want to pick. Warrior, Mage, Thief.") 
+let playerweapon = "Eye Poke";
+if (playerclass == "Warrior") {playerweapon = "Sword";  } 
+else if (playerclass == "Mage") {playerweapon = "Wand";}
+else if (playerclass == "Thief") {playerweapon = "Knife";}
+
+if (playerweapon == "Sword") {
+    alert("You have a sword");
+}
+else if (playerweapon == "Wand") {
+    alert("You have a Wand");
+}
+else if (playerweapon == "Knife") {
+    alert("You have a Knife");
+}
+else if (playerweapon == "Eye Poke") {
+    alert("You have 2 legendary fingers");
+} 
+
 /*PLAYER ABILITY
 Define a variable to represent a unique player ability. 
 For example, they could have a fireball, a healing spell, wind blast, etc.
@@ -38,15 +56,16 @@ Finally, create an else statement to define a default monster for the player to 
 let boss = ("Giant")
 alert("you encounter a giant, he's weilding a fashioned titanium sword about half his size.")
 //prompt("What do you do?")
-if (playerability == "Slash") {
-    alert("He falls down on one knee and dies");
+
+if (playerweapon == "Sword") {
+    alert("He falls down on one knee and dies as you slash him");
 }
-else if (playerability == "Fireball") {
-    alert("He isn't affected by the flames at all and kills you with a single slash");
+else if (playerweapon == "Wand") {
+    alert("He isn't affected by the flames at all as you unleash a fireball at him, and he kills you with a single slash");
 }
-else if (playerability == "Stab") {
+else if (playerweapon == "Knife") {
     alert("He isn't affected by the stab and the blade only dents itself, as he kills you with a swift slash");
 }
-else if (playerability == "Eye Poke") {
+else if (playerweapon == "Eye Poke") {
     alert("He begs for mercy as hes knocked down to the ground, wimpering at your extremely dangerous technique, as he runs away and lets you out.");
-}
+} 
