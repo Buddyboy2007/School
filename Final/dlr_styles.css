@@ -15,14 +15,14 @@
 /* HTML and Body styles */
 
 html {
-   background: url(dlr_back.png), rgb(165, 146, 165);
+   background: url(element.jpg), rgb(165, 146, 165);
    font-family: Verdana, Geneva, sans-serif;
    height: 100%;
 }
 
 body {
-   background-color: orange;
-   box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+   background-color: rgb(104, 7, 0);
+   box-shadow: rgb(5, 5, 5) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
    border-left: 1px solid rgb(153, 0, 153);
    border-right: 1px solid rgb(153, 0, 153);
    height: 100%;   

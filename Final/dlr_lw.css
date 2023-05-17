@@ -15,16 +15,16 @@
 /* HTML and Body styles */
 
 html {
-   background: url(dlr_back.png), rgb(165, 146, 165);
+   background: url(element.jpg), rgb(119, 0, 0);
    font-family: Verdana, Geneva, sans-serif;
    height: 100%;
 }
 
 body {
-   background-color: white;
-   box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
-   border-left: 1px solid rgb(153, 0, 153);
-   border-right: 1px solid rgb(153, 0, 153);
+   background-color: rgb(158, 0, 0);
+   box-shadow: rgb(80, 0, 0) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+   border-left: 1px solid rgb(104, 0, 0);
+   border-right: 1px solid rgb(253, 3, 3);
    height: 100%;   
    margin: 0px auto;
    min-width: 320px;
@@ -54,15 +54,15 @@ div#container {
 /* Header styles */
 
 body > header {
-   background-color: rgb(218, 210, 218);
-   border-bottom: 1px solid rgb(153, 0, 153);
-   color: white;
+   background-color: rgb(155, 36, 36);
+   border-bottom: 1px solid rgb(179, 57, 57);
+   color: rgb(255, 0, 0);
    padding-bottom: 45px;
 
 }
 
 body > header h1 {
-   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);
+   background: linear-gradient(to left, rgb(255, 136, 0) 70%, rgb(38, 0, 255));
    color: white;
    font-size: 1.4em;
    padding: 5px 0px 5px 12px;
@@ -87,14 +87,14 @@ body > header nav ul li {
 }
 
 body > header nav ul li a {
-   color: rgb(153, 0, 153);
+   color: rgb(255, 139, 118);
    display: block;
    width: 100%;
 }
 
 body > header nav ul li a:hover {
    color: white;
-   background-color: rgb(153, 0, 153);
+   background-color: rgb(255, 115, 115);
 }
 
 a#navicon {
@@ -104,16 +104,16 @@ a#navicon {
 /* Container Styles */
 
 div#container {
-   background: rgb(248, 248, 210);
+   background: rgb(255, 104, 104);
 
 }
 
 /* Article Styles */
 
 div#container header {
-   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);
+   background: linear-gradient(to right, rgb(0, 56, 82) 30%, rgb(0, 174, 255));
    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-   color: white;
+   color: rgb(139, 0, 0);
    padding: 5px 0px 5px 12px;
 }
 

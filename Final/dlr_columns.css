@@ -24,7 +24,7 @@
       -webkit-column-gap: 30px; 
       column-gap: 30px;
       
-      -moz-column-rule: 2px solid gray; 
+      -moz-column-rule: 2px solid rgb(99, 30, 30); 
       -webkit-column-rule: 2px solid gray; 
       column-rule: 2px solid gray;
 
