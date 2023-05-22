@@ -2,67 +2,56 @@
 <html lang="en">
 <head>
    <!--
-      New Perspectives on HTML5 and CSS3, 7th Edition
-      Tutorial 6
-      Tutorial Case
-
-      DLR Nightly Schedule
-      Author: 
-      Date:   
-
-      Filename:   dlr_evenings.html
+      Author: Lance Richmond
+      Date:   5/20/2023
 
    -->
    
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>Bakery</title>
-   <link href="dlr_reset.css" rel="stylesheet" />
-   <link href="dlr_styles.css" rel="stylesheet" />    
-   <link href="dlr_tables" rel="stylesheet" /> 
+   <title>Lances Pizzaria - Schedule</title>
+   <link href="css/reset.css" rel="stylesheet" />
+   <link href="css/styles.css" rel="stylesheet" />    
+   <link href="css/tables" rel="stylesheet" /> 
 </head>
 
 <body>
    <header>
-      <h1>Listener Supported <em>Since</em> 1975</h1>
-      <nav>
-         <a id="navicon" href="#"><img src="element.jpg" alt="" /></a>
+      
+      <h1>Lances Pizzaria</h1>
+      <nav class="menu">
+         <a id="navicon" href="#"><img src="" alt="" /></a>
          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Listen Live</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="address.html">Address</a></li>
+            <li><a href="delivery.html">Delivery Status </a></li>
          </ul>
       </nav>
+      <h1 class="right-header">Customer Supported <em>Since</em> 1975</h1>
    </header>
    
    <div id="container">
    
-      <section id="main"> 
-         <img src="" alt="" />
+      <article id="main">  
          <h2>Opening Times</h2>
          <p>We sell Items at our store just incase you need these items. It'll be very helpful
-            to make your pizzas at your home. "The Best Way!". As a bakery we want to ensure 
-            our pizzas taste the best for your own satisfaction.
+            to make your pizzas at your home. "The Best Way!". As a pizzaria we want to ensure 
+            our pizzas taste the best for your own satisfaction.   </p>
+            <aside id="future">
             We run from 
-            <li><strong>Monday 5:30 a.m. to 7:00 p.m.</strong></li></p>
-            <li><strong>Tuesday 6:30 a.m. to 6:00 p.m.</strong></li></p>
-            <li><strong>Wednesday 9:30 a.m. to 6:00 p.m.</strong></li></p>
-            <li><strong>Thrusday 9:00 a.m. to 5:00 p.m.</strong></li></p>
-            <li><strong>Friday 6:30 a.m. to 5:00 p.m.</strong></li></p>
-      </section>
-      
-      <section id="right">
-         <aside id="current">
-            <h1>On the Air Now</h1>
-            <h2>Folk Fest </h2>
-            <p>Featuring the best of traditional and modern 
-               folk music </p>
+            <div class="art">
+               <li><strong>Monday 5:30 a.m. to 7:00 p.m.</strong></li>
+               <li><strong>Tuesday 6:30 a.m. to 6:00 p.m.</strong></li>
+               <li><strong>Wednesday 9:30 a.m. to 6:00 p.m.</strong></li>
+               <li><strong>Thrusday 9:00 a.m. to 5:00 p.m.</strong></li>
+               <li><strong>Friday 6:30 a.m. to 5:00 p.m.</strong></li>
+            </div>
+
          </aside>
+      
+      
+       
          <aside id="future">
             <h1>Coming Up on Bakeries</h1>
             <h2>May 11-14<br/>
@@ -81,13 +70,14 @@
            
                
          </aside>
-      </section>
+      </article>
       
    </div>
    
    <footer>
-      DLR &#183; 4300 Magnolia Lane &#183; Bismarck, ND 58504 &#183; (701) 555 - 5611
+      BLR &#183; 121 Shelby Lane &#183; Centerville, ND 58504 &#183; (937) 555 - 5611
    </footer>
+
 </body>
 
 </html>

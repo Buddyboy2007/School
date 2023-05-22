@@ -14,8 +14,32 @@
 
 /* HTML and Body styles */
 
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+
+
+.right-header {
+   text-align: right;
+ }
+
+.art {
+   margin-right: 25px;
+}
+
+.menu {
+   margin-bottom: 25px;
+   margin-top: 25px;
+}
+
+.container {
+   margin-top: 100px; /* Adjust the value as needed */
+ }
 html {
-   background: url(element.jpg), rgb(165, 146, 165);
+   background: url(../images/pizza1.png), rgb(165, 146, 165);
    font-family: Verdana, Geneva, sans-serif;
    height: 100%;
 }

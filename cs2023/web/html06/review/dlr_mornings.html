@@ -7,8 +7,8 @@
       Review Assignment
 
       DLR Morning Schedule
-      Author: 
-      Date:   
+      Author: Lance Richmond
+      Date:   5/17/2023
 
       Filename:   dlr_mornings.html
 
@@ -18,7 +18,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>DLR Morning Schedule</title>
    <link href="dlr_reset2.css" rel="stylesheet" />
-   <link href="dlr_styles2.css" rel="stylesheet" />         
+   <link href="dlr_styles2.css" rel="stylesheet" />       
+   <link href="dlr_columns2.css" rel="stylesheet" />  
+   <link href="dlr_tables2.css" rel="stylesheet" />
+   
 </head>
 
 <body>
@@ -48,7 +51,67 @@
             5:00 a.m. to 10:30 p.m. <br />You can <a href="#">Listen Live</a> to streaming audio 
             of our broadcast or download programs from our <a href="#">Podcast</a>. 
             <br />Please refer below for our current morning schedule.</p>
-
+         <table class="programs"> 
+            All Times Central
+            <caption>Table Caption</caption>
+            <colgroup>
+              <col class="timeColumn">
+              <col class="wDayColumns" span="5">
+              <col class="wEndColumns" span="2">
+            </colgroup>
+            <table  class="programs">
+               <table  class="programs">
+                 
+                  <colgroup>
+                    <!-- col elements here -->
+                  </colgroup>
+                  <thead>
+                    <!-- Table header content -->
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">Time</th>
+                      <th colspan="5">Weekday Programs</th>
+                      <th colspan="2">Weekend Programming</th>
+                    </tr>
+                    <tr>
+                      <th>Monday - Friday</th>
+                      <th>Monday - Friday</th>
+                      <th>Monday - Friday</th>
+                      <th>Monday - Friday</th>
+                      <th>Monday - Friday</th>
+                      <th>Saturday</th>
+                      <th>Sunday</th>
+                    </tr>
+                    <tr>
+                      <th>5:00 a.m.</th>
+                      <td colspan="5">Program A</td>
+                      <td colspan="2">Program B</td>
+                    </tr>
+                    <!-- Additional rows for each half-hour interval -->
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="8">Support your Public Radio Station</td>
+                    </tr>
+                  </tfoot>
+                </table>
+               <caption>Table Caption</caption>
+               <colgroup>
+                 <!-- col elements here -->
+               </colgroup>
+               <thead>
+                 <!-- Table header content -->
+               </thead>
+               <tbody>
+                 <!-- Table body content -->
+               </tbody>
+               <tfoot>
+                 <tr>
+                   <td colspan="8">Support your Public Radio Station</td>
+                 </tr>
+               </tfoot>
+             </table>
       </section>
       
    </div>

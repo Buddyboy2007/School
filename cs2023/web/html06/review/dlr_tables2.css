@@ -15,14 +15,45 @@
 
 /* Table Styles */
 
-
-
+table.programs {
+   width: 100%;
+   border: 15px outset rgb(151, 151, 151);
+   border-collapse: collapse;
+   font-family: Arial, Verdana, sans-serif;
+ }
+ 
 /* Table Caption Styles */
 
 
 
 /* Table Column Styles */
-
+table tr {
+   height: 25px;
+ }
+ th, td {
+   border: 1px solid gray;
+   vertical-align: top;
+   padding: 5px;
+ }
+ col.timeColumn {
+   width: 10%;
+   background-color: rgb(215, 205, 151);
+ }
+ col.wDayColumns {
+   width: 11%;
+   background-color: rgb(236, 255, 211);
+ }
+ col.wEndColumns {
+   width: 17%;
+   background-color: rgb(255, 231, 255);
+ }
+ thead th {
+   color: white;
+   background-color: rgb(105, 177, 60);
+ }
+ thead th:first-of-type {
+   background-color: rgb(153, 86, 7);
+ }
 
 
 /* Table Header Styles */
